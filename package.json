@@ -1,0 +1,21 @@
+{
+  "name": "brainwaves-quickstart",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A quickstart template for receiving and passing data from OpenBCI to the browser",
+  "main": "brainwaves.js",
+  "license": "MIT",
+  "keywords": [
+    "openbci",
+    "brainwaves",
+    "EEG"
+  ],
+  "author": "Alex Castillo",
+  "scripts": {},
+  "dependencies": {
+    "openbci-sdk": "^0.3.2",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5",
+    "yargs": "^4.6.0"
+  }
+}

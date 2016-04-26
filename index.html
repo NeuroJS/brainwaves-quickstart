@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Brainwaves Quickstart</title>
+    <script src="node_modules/socket.io-client/socket.io.js"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main id="lines"></main>
+    <script>
+        var socket = io('http://localhost:8080');
+        var lines = document.querySelector('#lines');
+        socket.on('brainwave', function (brainwave) {
+            // Challenge: replace this next lines with an Angular repeater or a cool graph!
+            var line = document.createElement('pre');
+            line.innerHTML = 'Channel data: ' + brainwave.channelData;
+            lines.insertBefore(line, lines.firstChild);
+        });
+    </script>
+</body>
+</html>
